@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.table_migration import TableMigration  # noqa: E501
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.models.table_migration import TableMigration  # noqa: E501
+from XataClient.rest import ApiException
 
 
 class TestTableMigration(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestTableMigration(unittest.TestCase):
     def testTableMigration(self):
         """Test TableMigration"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.table_migration.TableMigration()  # noqa: E501
+        # model = XataClient.models.table_migration.TableMigration()  # noqa: E501
         pass
 
 

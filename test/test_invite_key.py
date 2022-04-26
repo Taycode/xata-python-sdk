@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.invite_key import InviteKey  # noqa: E501
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.models.invite_key import InviteKey  # noqa: E501
+from XataClient.rest import ApiException
 
 
 class TestInviteKey(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestInviteKey(unittest.TestCase):
     def testInviteKey(self):
         """Test InviteKey"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.invite_key.InviteKey()  # noqa: E501
+        # model = XataClient.models.invite_key.InviteKey()  # noqa: E501
         pass
 
 

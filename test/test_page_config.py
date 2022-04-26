@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.page_config import PageConfig  # noqa: E501
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.models.page_config import PageConfig  # noqa: E501
+from XataClient.rest import ApiException
 
 
 class TestPageConfig(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestPageConfig(unittest.TestCase):
     def testPageConfig(self):
         """Test PageConfig"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.page_config.PageConfig()  # noqa: E501
+        # model = XataClient.models.page_config.PageConfig()  # noqa: E501
         pass
 
 

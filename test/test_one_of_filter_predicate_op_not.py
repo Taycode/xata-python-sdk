@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.one_of_filter_predicate_op_not import OneOfFilterPredicateOpNot  # noqa: E501
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.models.one_of_filter_predicate_op_not import OneOfFilterPredicateOpNot  # noqa: E501
+from XataClient.rest import ApiException
 
 
 class TestOneOfFilterPredicateOpNot(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestOneOfFilterPredicateOpNot(unittest.TestCase):
     def testOneOfFilterPredicateOpNot(self):
         """Test OneOfFilterPredicateOpNot"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.one_of_filter_predicate_op_not.OneOfFilterPredicateOpNot()  # noqa: E501
+        # model = XataClient.models.one_of_filter_predicate_op_not.OneOfFilterPredicateOpNot()  # noqa: E501
         pass
 
 

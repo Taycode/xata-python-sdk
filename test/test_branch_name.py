@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.branch_name import BranchName  # noqa: E501
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.models.branch_name import BranchName  # noqa: E501
+from XataClient.rest import ApiException
 
 
 class TestBranchName(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestBranchName(unittest.TestCase):
     def testBranchName(self):
         """Test BranchName"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.branch_name.BranchName()  # noqa: E501
+        # model = XataClient.models.branch_name.BranchName()  # noqa: E501
         pass
 
 

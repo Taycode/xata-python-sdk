@@ -22,8 +22,9 @@ pip install git+https://github.com/GIT_USER_ID/GIT_REPO_ID.git
 (you may need to run `pip` with root permission: `sudo pip install git+https://github.com/GIT_USER_ID/GIT_REPO_ID.git`)
 
 Then import the package:
+
 ```python
-import swagger_client 
+import XataClient 
 ```
 
 ### Setuptools
@@ -36,8 +37,9 @@ python setup.py install --user
 (or `sudo python setup.py install` to install the package for all users)
 
 Then import the package:
+
 ```python
-import swagger_client
+import XataClient
 ```
 
 ## Getting Started
@@ -47,15 +49,15 @@ Please follow the [installation procedure](#installation--usage) and then run th
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.BranchApi(swagger_client.ApiClient(configuration))
-db_branch_name = swagger_client.DBBranchName() # DBBranchName | The DBBranchName matches the pattern `{db_name}:{branch_name}`. 
-body = swagger_client.DbDbBranchNameBody() # DbDbBranchNameBody |  (optional)
+api_instance = XataClient.BranchApi(XataClient.ApiClient(configuration))
+db_branch_name = XataClient.DBBranchName() # DBBranchName | The DBBranchName matches the pattern `{db_name}:{branch_name}`. 
+body = XataClient.DbDbBranchNameBody() # DbDbBranchNameBody |  (optional)
 _from = '_from_example' # str | Name of source branch to branch the new schema from (optional)
 
 try:
@@ -66,8 +68,8 @@ except ApiException as e:
 
 
 # create an instance of the API class
-api_instance = swagger_client.BranchApi(swagger_client.ApiClient(configuration))
-db_branch_name = swagger_client.DBBranchName() # DBBranchName | The DBBranchName matches the pattern `{db_name}:{branch_name}`. 
+api_instance = XataClient.BranchApi(XataClient.ApiClient(configuration))
+db_branch_name = XataClient.DBBranchName() # DBBranchName | The DBBranchName matches the pattern `{db_name}:{branch_name}`. 
 
 try:
     # Delete Database branch
@@ -77,9 +79,9 @@ except ApiException as e:
 
 
 # create an instance of the API class
-api_instance = swagger_client.BranchApi(swagger_client.ApiClient(configuration))
-db_branch_name = swagger_client.DBBranchName() # DBBranchName | The DBBranchName matches the pattern `{db_name}:{branch_name}`. 
-body = swagger_client.MigrationsExecuteBody() # MigrationsExecuteBody |  (optional)
+api_instance = XataClient.BranchApi(XataClient.ApiClient(configuration))
+db_branch_name = XataClient.DBBranchName() # DBBranchName | The DBBranchName matches the pattern `{db_name}:{branch_name}`. 
+body = XataClient.MigrationsExecuteBody() # MigrationsExecuteBody |  (optional)
 
 try:
     # Migrate branch
@@ -89,8 +91,8 @@ except ApiException as e:
 
 
 # create an instance of the API class
-api_instance = swagger_client.BranchApi(swagger_client.ApiClient(configuration))
-db_branch_name = swagger_client.DBBranchName() # DBBranchName | The DBBranchName matches the pattern `{db_name}:{branch_name}`. 
+api_instance = XataClient.BranchApi(XataClient.ApiClient(configuration))
+db_branch_name = XataClient.DBBranchName() # DBBranchName | The DBBranchName matches the pattern `{db_name}:{branch_name}`. 
 
 try:
     # Get branch schema and metadata
@@ -101,8 +103,8 @@ except ApiException as e:
 
 
 # create an instance of the API class
-api_instance = swagger_client.BranchApi(swagger_client.ApiClient(configuration))
-db_name = swagger_client.DBName() # DBName | The Database Name
+api_instance = XataClient.BranchApi(XataClient.ApiClient(configuration))
+db_name = XataClient.DBName() # DBName | The Database Name
 
 try:
     # List branches
@@ -113,8 +115,8 @@ except ApiException as e:
 
 
 # create an instance of the API class
-api_instance = swagger_client.BranchApi(swagger_client.ApiClient(configuration))
-db_branch_name = swagger_client.DBBranchName() # DBBranchName | The DBBranchName matches the pattern `{db_name}:{branch_name}`. 
+api_instance = XataClient.BranchApi(XataClient.ApiClient(configuration))
+db_branch_name = XataClient.DBBranchName() # DBBranchName | The DBBranchName matches the pattern `{db_name}:{branch_name}`. 
 
 try:
     # Get Branch Metadata
@@ -125,8 +127,8 @@ except ApiException as e:
 
 
 # create an instance of the API class
-api_instance = swagger_client.BranchApi(swagger_client.ApiClient(configuration))
-db_branch_name = swagger_client.DBBranchName() # DBBranchName | The DBBranchName matches the pattern `{db_name}:{branch_name}`. 
+api_instance = XataClient.BranchApi(XataClient.ApiClient(configuration))
+db_branch_name = XataClient.DBBranchName() # DBBranchName | The DBBranchName matches the pattern `{db_name}:{branch_name}`. 
 
 try:
     # Get branch migration history
@@ -137,9 +139,9 @@ except ApiException as e:
 
 
 # create an instance of the API class
-api_instance = swagger_client.BranchApi(swagger_client.ApiClient(configuration))
-db_branch_name = swagger_client.DBBranchName() # DBBranchName | The DBBranchName matches the pattern `{db_name}:{branch_name}`. 
-body = swagger_client.Schema() # Schema |  (optional)
+api_instance = XataClient.BranchApi(XataClient.ApiClient(configuration))
+db_branch_name = XataClient.DBBranchName() # DBBranchName | The DBBranchName matches the pattern `{db_name}:{branch_name}`. 
+body = XataClient.Schema() # Schema |  (optional)
 
 try:
     # Compute migration plan
@@ -150,8 +152,8 @@ except ApiException as e:
 
 
 # create an instance of the API class
-api_instance = swagger_client.BranchApi(swagger_client.ApiClient(configuration))
-db_branch_name = swagger_client.DBBranchName() # DBBranchName | The DBBranchName matches the pattern `{db_name}:{branch_name}`. 
+api_instance = XataClient.BranchApi(XataClient.ApiClient(configuration))
+db_branch_name = XataClient.DBBranchName() # DBBranchName | The DBBranchName matches the pattern `{db_name}:{branch_name}`. 
 
 try:
     # Branch stats
@@ -162,9 +164,9 @@ except ApiException as e:
 
 
 # create an instance of the API class
-api_instance = swagger_client.BranchApi(swagger_client.ApiClient(configuration))
-db_branch_name = swagger_client.DBBranchName() # DBBranchName | The DBBranchName matches the pattern `{db_name}:{branch_name}`. 
-body = swagger_client.BranchMetadata() # BranchMetadata |  (optional)
+api_instance = XataClient.BranchApi(XataClient.ApiClient(configuration))
+db_branch_name = XataClient.DBBranchName() # DBBranchName | The DBBranchName matches the pattern `{db_name}:{branch_name}`. 
+body = XataClient.BranchMetadata() # BranchMetadata |  (optional)
 
 try:
     # Update branch metadata

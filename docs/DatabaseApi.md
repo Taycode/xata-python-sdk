@@ -16,18 +16,19 @@ Create Database
 Create Database with identifier name
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.DatabaseApi(swagger_client.ApiClient(configuration))
-db_name = swagger_client.DBName() # DBName | The Database Name
-body = swagger_client.DbsDbNameBody() # DbsDbNameBody |  (optional)
+api_instance = XataClient.DatabaseApi(XataClient.ApiClient(configuration))
+db_name = XataClient.DBName() # DBName | The Database Name
+body = XataClient.DbsDbNameBody() # DbsDbNameBody |  (optional)
 
 try:
     # Create Database
@@ -67,17 +68,18 @@ Delete Database
 Delete a database and all of its branches and tables permanently.
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.DatabaseApi(swagger_client.ApiClient(configuration))
-db_name = swagger_client.DBName() # DBName | The Database Name
+api_instance = XataClient.DatabaseApi(XataClient.ApiClient(configuration))
+db_name = XataClient.DBName() # DBName | The Database Name
 
 try:
     # Delete Database
@@ -115,16 +117,17 @@ List databases
 List all databases available in your Workspace.
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.DatabaseApi(swagger_client.ApiClient(configuration))
+api_instance = XataClient.DatabaseApi(XataClient.ApiClient(configuration))
 
 try:
     # List databases

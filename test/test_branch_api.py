@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.api.branch_api import BranchApi  # noqa: E501
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.api.branch_api import BranchApi  # noqa: E501
+from XataClient.rest import ApiException
 
 
 class TestBranchApi(unittest.TestCase):

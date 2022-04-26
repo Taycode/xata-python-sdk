@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.table_name import TableName  # noqa: E501
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.models.table_name import TableName  # noqa: E501
+from XataClient.rest import ApiException
 
 
 class TestTableName(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestTableName(unittest.TestCase):
     def testTableName(self):
         """Test TableName"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.table_name.TableName()  # noqa: E501
+        # model = XataClient.models.table_name.TableName()  # noqa: E501
         pass
 
 

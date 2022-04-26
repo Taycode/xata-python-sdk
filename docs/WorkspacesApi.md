@@ -25,17 +25,18 @@ Accept the invitation to join a workspace
 Accept the invitation to join a workspace. If the operation succeeds the user will be a member of the workspace 
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.WorkspacesApi()
-workspace_id = swagger_client.WorkspaceID() # WorkspaceID | Workspace name
-invite_key = swagger_client.InviteKey() # InviteKey | Invite Key (secret) for the invited user
+api_instance = XataClient.WorkspacesApi()
+workspace_id = XataClient.WorkspaceID() # WorkspaceID | Workspace name
+invite_key = XataClient.InviteKey() # InviteKey | Invite Key (secret) for the invited user
 
 try:
     # Accept the invitation to join a workspace
@@ -74,17 +75,18 @@ Deletes an invite
 This operation provides a way to cancel invites by deleting them. Already accepted invites cannot be deleted.
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.WorkspacesApi()
-workspace_id = swagger_client.WorkspaceID() # WorkspaceID | Workspace name
-invite_id = swagger_client.InviteID() # InviteID | Invite identifier
+api_instance = XataClient.WorkspacesApi()
+workspace_id = XataClient.WorkspaceID() # WorkspaceID | Workspace name
+invite_id = XataClient.InviteID() # InviteID | Invite identifier
 
 try:
     # Deletes an invite
@@ -123,16 +125,17 @@ Create a new workspace
 Creates a new workspace with the user requesting it as its single owner.
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.WorkspacesApi()
-body = swagger_client.WorkspaceMeta() # WorkspaceMeta |  (optional)
+api_instance = XataClient.WorkspacesApi()
+body = XataClient.WorkspaceMeta() # WorkspaceMeta |  (optional)
 
 try:
     # Create a new workspace
@@ -171,16 +174,17 @@ Delete an existing workspace
 Delete the workspace with the provided ID
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.WorkspacesApi()
-workspace_id = swagger_client.WorkspaceID() # WorkspaceID | Workspace name
+api_instance = XataClient.WorkspacesApi()
+workspace_id = XataClient.WorkspaceID() # WorkspaceID | Workspace name
 
 try:
     # Delete an existing workspace
@@ -218,16 +222,17 @@ Get an existing workspace
 Retrieve workspace info from a workspace ID
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.WorkspacesApi()
-workspace_id = swagger_client.WorkspaceID() # WorkspaceID | Workspace name
+api_instance = XataClient.WorkspacesApi()
+workspace_id = XataClient.WorkspaceID() # WorkspaceID | Workspace name
 
 try:
     # Get an existing workspace
@@ -266,16 +271,17 @@ Get the list members of a workspace
 Retrieve the list of members of the given workspace
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.WorkspacesApi()
-workspace_id = swagger_client.WorkspaceID() # WorkspaceID | Workspace name
+api_instance = XataClient.WorkspacesApi()
+workspace_id = XataClient.WorkspaceID() # WorkspaceID | Workspace name
 
 try:
     # Get the list members of a workspace
@@ -314,15 +320,16 @@ Get workspaces
 Retrieve the list of workspaces the user belongs to
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.WorkspacesApi()
+api_instance = XataClient.WorkspacesApi()
 
 try:
     # Get workspaces
@@ -358,17 +365,18 @@ Invite a user to join the workspace
 Invite some user to join the workspace with the given role
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.WorkspacesApi()
-workspace_id = swagger_client.WorkspaceID() # WorkspaceID | Workspace name
-body = swagger_client.WorkspaceIdInvitesBody() # WorkspaceIdInvitesBody |  (optional)
+api_instance = XataClient.WorkspacesApi()
+workspace_id = XataClient.WorkspaceID() # WorkspaceID | Workspace name
+body = XataClient.WorkspaceIdInvitesBody() # WorkspaceIdInvitesBody |  (optional)
 
 try:
     # Invite a user to join the workspace
@@ -408,17 +416,18 @@ Remove a member from the workspace
 Remove the member from the workspace
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.WorkspacesApi()
-workspace_id = swagger_client.WorkspaceID() # WorkspaceID | Workspace name
-user_id = swagger_client.UserID() # UserID | UserID
+api_instance = XataClient.WorkspacesApi()
+workspace_id = XataClient.WorkspaceID() # WorkspaceID | Workspace name
+user_id = XataClient.UserID() # UserID | UserID
 
 try:
     # Remove a member from the workspace
@@ -457,17 +466,18 @@ Resend Invite notification
 This operation provides a way to resend an Invite notification. Invite notifications can only be sent for Invites not yet accepted.
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.WorkspacesApi()
-workspace_id = swagger_client.WorkspaceID() # WorkspaceID | Workspace name
-invite_id = swagger_client.InviteID() # InviteID | Invite identifier
+api_instance = XataClient.WorkspacesApi()
+workspace_id = XataClient.WorkspaceID() # WorkspaceID | Workspace name
+invite_id = XataClient.InviteID() # InviteID | Invite identifier
 
 try:
     # Resend Invite notification
@@ -506,17 +516,18 @@ Update an existing workspace
 Update workspace info
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.WorkspacesApi()
-workspace_id = swagger_client.WorkspaceID() # WorkspaceID | Workspace name
-body = swagger_client.WorkspaceMeta() # WorkspaceMeta |  (optional)
+api_instance = XataClient.WorkspacesApi()
+workspace_id = XataClient.WorkspaceID() # WorkspaceID | Workspace name
+body = XataClient.WorkspaceMeta() # WorkspaceMeta |  (optional)
 
 try:
     # Update an existing workspace
@@ -556,18 +567,19 @@ Update workspace member role
 Update a workspace member role. Workspaces must always have at least one owner, so this operation will fail if trying to remove owner role from the last owner in the workspace. 
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.WorkspacesApi()
-workspace_id = swagger_client.WorkspaceID() # WorkspaceID | Workspace name
-user_id = swagger_client.UserID() # UserID | UserID
-body = swagger_client.MembersUserIdBody() # MembersUserIdBody |  (optional)
+api_instance = XataClient.WorkspacesApi()
+workspace_id = XataClient.WorkspaceID() # WorkspaceID | Workspace name
+user_id = XataClient.UserID() # UserID | UserID
+body = XataClient.MembersUserIdBody() # MembersUserIdBody |  (optional)
 
 try:
     # Update workspace member role

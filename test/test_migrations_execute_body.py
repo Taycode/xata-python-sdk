@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.migrations_execute_body import MigrationsExecuteBody  # noqa: E501
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.models.migrations_execute_body import MigrationsExecuteBody  # noqa: E501
+from XataClient.rest import ApiException
 
 
 class TestMigrationsExecuteBody(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestMigrationsExecuteBody(unittest.TestCase):
     def testMigrationsExecuteBody(self):
         """Test MigrationsExecuteBody"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.migrations_execute_body.MigrationsExecuteBody()  # noqa: E501
+        # model = XataClient.models.migrations_execute_body.MigrationsExecuteBody()  # noqa: E501
         pass
 
 

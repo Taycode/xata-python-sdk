@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.any_of_filter_column import AnyOfFilterColumn  # noqa: E501
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.models.any_of_filter_column import AnyOfFilterColumn  # noqa: E501
+from XataClient.rest import ApiException
 
 
 class TestAnyOfFilterColumn(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestAnyOfFilterColumn(unittest.TestCase):
     def testAnyOfFilterColumn(self):
         """Test AnyOfFilterColumn"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.any_of_filter_column.AnyOfFilterColumn()  # noqa: E501
+        # model = XataClient.models.any_of_filter_column.AnyOfFilterColumn()  # noqa: E501
         pass
 
 

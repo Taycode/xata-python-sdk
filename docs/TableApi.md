@@ -23,19 +23,20 @@ Creates a new column
 Adds a new column to the table. The body of the request should contain the column definition. In the column definition, the 'name' field should contain the full path separated by dots. If the parent objects do not exists, they will be automatically created. For example, passing `\"name\": \"address.city\"` will auto-create the `address` object if it doesn't exist. 
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.TableApi(swagger_client.ApiClient(configuration))
-db_branch_name = swagger_client.DBBranchName() # DBBranchName | The DBBranchName matches the pattern `{db_name}:{branch_name}`. 
-table_name = swagger_client.TableName() # TableName | The Table name
-body = swagger_client.Column() # Column | The column definition. (optional)
+api_instance = XataClient.TableApi(XataClient.ApiClient(configuration))
+db_branch_name = XataClient.DBBranchName() # DBBranchName | The DBBranchName matches the pattern `{db_name}:{branch_name}`. 
+table_name = XataClient.TableName() # TableName | The Table name
+body = XataClient.Column() # Column | The column definition. (optional)
 
 try:
     # Creates a new column
@@ -76,18 +77,19 @@ Create table
 Creates a new table with the given name. Returns 422 if a table with the same name already exists.
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.TableApi(swagger_client.ApiClient(configuration))
-db_branch_name = swagger_client.DBBranchName() # DBBranchName | The DBBranchName matches the pattern `{db_name}:{branch_name}`. 
-table_name = swagger_client.TableName() # TableName | The Table name
+api_instance = XataClient.TableApi(XataClient.ApiClient(configuration))
+db_branch_name = XataClient.DBBranchName() # DBBranchName | The DBBranchName matches the pattern `{db_name}:{branch_name}`. 
+table_name = XataClient.TableName() # TableName | The Table name
 
 try:
     # Create table
@@ -126,19 +128,20 @@ Deletes a column
 Deletes the specified column. To refer to sub-objects, the column name can contain dots. For example `address.country`.
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.TableApi(swagger_client.ApiClient(configuration))
-db_branch_name = swagger_client.DBBranchName() # DBBranchName | The DBBranchName matches the pattern `{db_name}:{branch_name}`. 
-table_name = swagger_client.TableName() # TableName | The Table name
-column_name = swagger_client.ColumnName() # ColumnName | The Column name
+api_instance = XataClient.TableApi(XataClient.ApiClient(configuration))
+db_branch_name = XataClient.DBBranchName() # DBBranchName | The DBBranchName matches the pattern `{db_name}:{branch_name}`. 
+table_name = XataClient.TableName() # TableName | The Table name
+column_name = XataClient.ColumnName() # ColumnName | The Column name
 
 try:
     # Deletes a column
@@ -179,18 +182,19 @@ Delete table
 Deletes the table with the given name.
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.TableApi(swagger_client.ApiClient(configuration))
-db_branch_name = swagger_client.DBBranchName() # DBBranchName | The DBBranchName matches the pattern `{db_name}:{branch_name}`. 
-table_name = swagger_client.TableName() # TableName | The Table name
+api_instance = XataClient.TableApi(XataClient.ApiClient(configuration))
+db_branch_name = XataClient.DBBranchName() # DBBranchName | The DBBranchName matches the pattern `{db_name}:{branch_name}`. 
+table_name = XataClient.TableName() # TableName | The Table name
 
 try:
     # Delete table
@@ -229,19 +233,20 @@ Get column information
 Get the definition of a single column. To refer to sub-objects, the column name can contain dots. For example `address.country`.
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.TableApi(swagger_client.ApiClient(configuration))
-db_branch_name = swagger_client.DBBranchName() # DBBranchName | The DBBranchName matches the pattern `{db_name}:{branch_name}`. 
-table_name = swagger_client.TableName() # TableName | The Table name
-column_name = swagger_client.ColumnName() # ColumnName | The Column name
+api_instance = XataClient.TableApi(XataClient.ApiClient(configuration))
+db_branch_name = XataClient.DBBranchName() # DBBranchName | The DBBranchName matches the pattern `{db_name}:{branch_name}`. 
+table_name = XataClient.TableName() # TableName | The Table name
+column_name = XataClient.ColumnName() # ColumnName | The Column name
 
 try:
     # Get column information
@@ -282,18 +287,19 @@ Get the columns
 Retrieves the list of table columns and their definition. This endpoint returns the column list with object columns being reported with their full dot-separated path (flattened). 
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.TableApi(swagger_client.ApiClient(configuration))
-db_branch_name = swagger_client.DBBranchName() # DBBranchName | The DBBranchName matches the pattern `{db_name}:{branch_name}`. 
-table_name = swagger_client.TableName() # TableName | The Table name
+api_instance = XataClient.TableApi(XataClient.ApiClient(configuration))
+db_branch_name = XataClient.DBBranchName() # DBBranchName | The DBBranchName matches the pattern `{db_name}:{branch_name}`. 
+table_name = XataClient.TableName() # TableName | The Table name
 
 try:
     # Get the columns
@@ -331,18 +337,19 @@ Name | Type | Description  | Notes
 Get table schema
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.TableApi(swagger_client.ApiClient(configuration))
-db_branch_name = swagger_client.DBBranchName() # DBBranchName | The DBBranchName matches the pattern `{db_name}:{branch_name}`. 
-table_name = swagger_client.TableName() # TableName | The Table name
+api_instance = XataClient.TableApi(XataClient.ApiClient(configuration))
+db_branch_name = XataClient.DBBranchName() # DBBranchName | The DBBranchName matches the pattern `{db_name}:{branch_name}`. 
+table_name = XataClient.TableName() # TableName | The Table name
 
 try:
     # Get table schema
@@ -380,19 +387,20 @@ Name | Type | Description  | Notes
 Update table schema
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.TableApi(swagger_client.ApiClient(configuration))
-db_branch_name = swagger_client.DBBranchName() # DBBranchName | The DBBranchName matches the pattern `{db_name}:{branch_name}`. 
-table_name = swagger_client.TableName() # TableName | The Table name
-body = swagger_client.TableNameSchemaBody() # TableNameSchemaBody |  (optional)
+api_instance = XataClient.TableApi(XataClient.ApiClient(configuration))
+db_branch_name = XataClient.DBBranchName() # DBBranchName | The DBBranchName matches the pattern `{db_name}:{branch_name}`. 
+table_name = XataClient.TableName() # TableName | The Table name
+body = XataClient.TableNameSchemaBody() # TableNameSchemaBody |  (optional)
 
 try:
     # Update table schema
@@ -432,20 +440,21 @@ Updates a column
 Update column with partial data. Can be used for renaming the column by providing a new \"name\" field. To refer to sub-objects, the column name can contain dots. For example `address.country`. 
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.TableApi(swagger_client.ApiClient(configuration))
-db_branch_name = swagger_client.DBBranchName() # DBBranchName | The DBBranchName matches the pattern `{db_name}:{branch_name}`. 
-table_name = swagger_client.TableName() # TableName | The Table name
-column_name = swagger_client.ColumnName() # ColumnName | The Column name
-body = swagger_client.ColumnsColumnNameBody() # ColumnsColumnNameBody |  (optional)
+api_instance = XataClient.TableApi(XataClient.ApiClient(configuration))
+db_branch_name = XataClient.DBBranchName() # DBBranchName | The DBBranchName matches the pattern `{db_name}:{branch_name}`. 
+table_name = XataClient.TableName() # TableName | The Table name
+column_name = XataClient.ColumnName() # ColumnName | The Column name
+body = XataClient.ColumnsColumnNameBody() # ColumnsColumnNameBody |  (optional)
 
 try:
     # Updates a column
@@ -487,19 +496,20 @@ Update table
 Update table. Currently there is only one update operation supported: renaming the table by providing a new name.  In the example below, we rename a table from â€œusersâ€ to â€œpeopleâ€:  ```jsx PATCH /db/test:main/tables/users {   \"name\": \"people\" } ```
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.TableApi(swagger_client.ApiClient(configuration))
-db_branch_name = swagger_client.DBBranchName() # DBBranchName | The DBBranchName matches the pattern `{db_name}:{branch_name}`. 
-table_name = swagger_client.TableName() # TableName | The Table name
-body = swagger_client.TablesTableNameBody() # TablesTableNameBody |  (optional)
+api_instance = XataClient.TableApi(XataClient.ApiClient(configuration))
+db_branch_name = XataClient.DBBranchName() # DBBranchName | The DBBranchName matches the pattern `{db_name}:{branch_name}`. 
+table_name = XataClient.TableName() # TableName | The Table name
+body = XataClient.TablesTableNameBody() # TablesTableNameBody |  (optional)
 
 try:
     # Update table

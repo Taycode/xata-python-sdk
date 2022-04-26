@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.sort_expression import SortExpression  # noqa: E501
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.models.sort_expression import SortExpression  # noqa: E501
+from XataClient.rest import ApiException
 
 
 class TestSortExpression(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestSortExpression(unittest.TestCase):
     def testSortExpression(self):
         """Test SortExpression"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.sort_expression.SortExpression()  # noqa: E501
+        # model = XataClient.models.sort_expression.SortExpression()  # noqa: E501
         pass
 
 

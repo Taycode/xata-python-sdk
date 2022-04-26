@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.branch_metadata import BranchMetadata  # noqa: E501
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.models.branch_metadata import BranchMetadata  # noqa: E501
+from XataClient.rest import ApiException
 
 
 class TestBranchMetadata(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestBranchMetadata(unittest.TestCase):
     def testBranchMetadata(self):
         """Test BranchMetadata"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.branch_metadata.BranchMetadata()  # noqa: E501
+        # model = XataClient.models.branch_metadata.BranchMetadata()  # noqa: E501
         pass
 
 

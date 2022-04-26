@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.schema import Schema  # noqa: E501
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.models.schema import Schema  # noqa: E501
+from XataClient.rest import ApiException
 
 
 class TestSchema(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestSchema(unittest.TestCase):
     def testSchema(self):
         """Test Schema"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.schema.Schema()  # noqa: E501
+        # model = XataClient.models.schema.Schema()  # noqa: E501
         pass
 
 

@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.db_name import DBName  # noqa: E501
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.models.db_name import DBName  # noqa: E501
+from XataClient.rest import ApiException
 
 
 class TestDBName(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestDBName(unittest.TestCase):
     def testDBName(self):
         """Test DBName"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.db_name.DBName()  # noqa: E501
+        # model = XataClient.models.db_name.DBName()  # noqa: E501
         pass
 
 

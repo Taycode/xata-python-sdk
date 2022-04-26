@@ -19,16 +19,17 @@ Create and return new API key
 Create and return new API key
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi()
-key_name = swagger_client.APIKeyName() # APIKeyName | API Key name
+api_instance = XataClient.UsersApi()
+key_name = XataClient.APIKeyName() # APIKeyName | API Key name
 
 try:
     # Create and return new API key
@@ -67,15 +68,16 @@ Delete user
 Delete the user making the request
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi()
+api_instance = XataClient.UsersApi()
 
 try:
     # Delete user
@@ -110,16 +112,17 @@ Delete an existing API key
 Delete an existing API key
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi()
-key_name = swagger_client.APIKeyName() # APIKeyName | API Key name
+api_instance = XataClient.UsersApi()
+key_name = XataClient.APIKeyName() # APIKeyName | API Key name
 
 try:
     # Delete an existing API key
@@ -157,15 +160,16 @@ Get user details
 Return details of the user making the request
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi()
+api_instance = XataClient.UsersApi()
 
 try:
     # Get user details
@@ -201,15 +205,16 @@ Get the list of user API keys
 Retrieve a list of existing user API keys
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi()
+api_instance = XataClient.UsersApi()
 
 try:
     # Get the list of user API keys
@@ -245,16 +250,17 @@ Update user info
 Update user info
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi()
-body = swagger_client.User() # User |  (optional)
+api_instance = XataClient.UsersApi()
+body = XataClient.User() # User |  (optional)
 
 try:
     # Update user info

@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.api.table_api import TableApi  # noqa: E501
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.api.table_api import TableApi  # noqa: E501
+from XataClient.rest import ApiException
 
 
 class TestTableApi(unittest.TestCase):

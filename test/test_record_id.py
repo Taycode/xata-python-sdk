@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.record_id import RecordID  # noqa: E501
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.models.record_id import RecordID  # noqa: E501
+from XataClient.rest import ApiException
 
 
 class TestRecordID(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestRecordID(unittest.TestCase):
     def testRecordID(self):
         """Test RecordID"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.record_id.RecordID()  # noqa: E501
+        # model = XataClient.models.record_id.RecordID()  # noqa: E501
         pass
 
 

@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.list_databases_response_ui import ListDatabasesResponseUi  # noqa: E501
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.models.list_databases_response_ui import ListDatabasesResponseUi  # noqa: E501
+from XataClient.rest import ApiException
 
 
 class TestListDatabasesResponseUi(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestListDatabasesResponseUi(unittest.TestCase):
     def testListDatabasesResponseUi(self):
         """Test ListDatabasesResponseUi"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.list_databases_response_ui.ListDatabasesResponseUi()  # noqa: E501
+        # model = XataClient.models.list_databases_response_ui.ListDatabasesResponseUi()  # noqa: E501
         pass
 
 

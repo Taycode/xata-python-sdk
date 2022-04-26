@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.filter_list import FilterList  # noqa: E501
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.models.filter_list import FilterList  # noqa: E501
+from XataClient.rest import ApiException
 
 
 class TestFilterList(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestFilterList(unittest.TestCase):
     def testFilterList(self):
         """Test FilterList"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.filter_list.FilterList()  # noqa: E501
+        # model = XataClient.models.filter_list.FilterList()  # noqa: E501
         pass
 
 

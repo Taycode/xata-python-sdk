@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.one_of_filter_predicate_op_any import OneOfFilterPredicateOpAny  # noqa: E501
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.models.one_of_filter_predicate_op_any import OneOfFilterPredicateOpAny  # noqa: E501
+from XataClient.rest import ApiException
 
 
 class TestOneOfFilterPredicateOpAny(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestOneOfFilterPredicateOpAny(unittest.TestCase):
     def testOneOfFilterPredicateOpAny(self):
         """Test OneOfFilterPredicateOpAny"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.one_of_filter_predicate_op_any.OneOfFilterPredicateOpAny()  # noqa: E501
+        # model = XataClient.models.one_of_filter_predicate_op_any.OneOfFilterPredicateOpAny()  # noqa: E501
         pass
 
 

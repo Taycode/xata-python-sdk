@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.members_user_id_body import MembersUserIdBody  # noqa: E501
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.models.members_user_id_body import MembersUserIdBody  # noqa: E501
+from XataClient.rest import ApiException
 
 
 class TestMembersUserIdBody(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestMembersUserIdBody(unittest.TestCase):
     def testMembersUserIdBody(self):
         """Test MembersUserIdBody"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.members_user_id_body.MembersUserIdBody()  # noqa: E501
+        # model = XataClient.models.members_user_id_body.MembersUserIdBody()  # noqa: E501
         pass
 
 

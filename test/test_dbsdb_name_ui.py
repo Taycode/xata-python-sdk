@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.dbsdb_name_ui import DbsdbNameUi  # noqa: E501
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.models.dbsdb_name_ui import DbsdbNameUi  # noqa: E501
+from XataClient.rest import ApiException
 
 
 class TestDbsdbNameUi(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestDbsdbNameUi(unittest.TestCase):
     def testDbsdbNameUi(self):
         """Test DbsdbNameUi"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.dbsdb_name_ui.DbsdbNameUi()  # noqa: E501
+        # model = XataClient.models.dbsdb_name_ui.DbsdbNameUi()  # noqa: E501
         pass
 
 

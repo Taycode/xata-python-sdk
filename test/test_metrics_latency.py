@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.metrics_latency import MetricsLatency  # noqa: E501
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.models.metrics_latency import MetricsLatency  # noqa: E501
+from XataClient.rest import ApiException
 
 
 class TestMetricsLatency(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestMetricsLatency(unittest.TestCase):
     def testMetricsLatency(self):
         """Test MetricsLatency"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.metrics_latency.MetricsLatency()  # noqa: E501
+        # model = XataClient.models.metrics_latency.MetricsLatency()  # noqa: E501
         pass
 
 

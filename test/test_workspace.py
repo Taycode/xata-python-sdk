@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.workspace import Workspace  # noqa: E501
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.models.workspace import Workspace  # noqa: E501
+from XataClient.rest import ApiException
 
 
 class TestWorkspace(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestWorkspace(unittest.TestCase):
     def testWorkspace(self):
         """Test Workspace"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.workspace.Workspace()  # noqa: E501
+        # model = XataClient.models.workspace.Workspace()  # noqa: E501
         pass
 
 

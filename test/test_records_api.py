@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.api.records_api import RecordsApi  # noqa: E501
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.api.records_api import RecordsApi  # noqa: E501
+from XataClient.rest import ApiException
 
 
 class TestRecordsApi(unittest.TestCase):

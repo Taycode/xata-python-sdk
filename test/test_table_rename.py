@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.table_rename import TableRename  # noqa: E501
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.models.table_rename import TableRename  # noqa: E501
+from XataClient.rest import ApiException
 
 
 class TestTableRename(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestTableRename(unittest.TestCase):
     def testTableRename(self):
         """Test TableRename"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.table_rename.TableRename()  # noqa: E501
+        # model = XataClient.models.table_rename.TableRename()  # noqa: E501
         pass
 
 

@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.inline_response2001_workspaces import InlineResponse2001Workspaces  # noqa: E501
-from swagger_client.rest import ApiException
+import XataClient
+from XataClient.models.inline_response2001_workspaces import InlineResponse2001Workspaces  # noqa: E501
+from XataClient.rest import ApiException
 
 
 class TestInlineResponse2001Workspaces(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestInlineResponse2001Workspaces(unittest.TestCase):
     def testInlineResponse2001Workspaces(self):
         """Test InlineResponse2001Workspaces"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.inline_response2001_workspaces.InlineResponse2001Workspaces()  # noqa: E501
+        # model = XataClient.models.inline_response2001_workspaces.InlineResponse2001Workspaces()  # noqa: E501
         pass
 
 
